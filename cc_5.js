@@ -48,7 +48,13 @@ const found = customers.find(customer => customer === "Charlie"); //Establishes 
 console.log(`The Customer Identified by the Search Parameters is: ${found}`); //Logs the Method in the console as well as a descriptive sentence so that the results of the code are clearly logged and displayed in the console
 
 //Task 8: Function Declaration
-function calculateTax(amount) {
-    return amount * 0.20;
+function calculateTax(amount, taxRate) {
+    return amount * taxRate
 }                                //Establishes the calculateTax function and outlines the math it will complete in order to calculate the tax on a specified amount
-console.log(`The Calculated Tax on an Item costing $2000 is: $${calculateTax(2000)}`) //Logs the function to the console and identifies the amount the Tax is being calculated from so that the Tax is displayed in the console
+console.log(`The Calculated Tax on an Item costing $2000 is: $${calculateTax(2000, 0.20)}`) //Logs the function to the console and identifies the amount the Tax is being calculated from so that the Tax is displayed in the console
+
+//Task 9: Function Expression
+function applyDiscount(price, discount) {
+    return price - (price * discount);
+}                                             //Creates the Function to apply the discount mathematically and return the discounted price
+console.log(`The Price of a Product after a Discount is: $${applyDiscount(7500, 0.25)}`) //Establishes the oiginal price and discount in a proper numerical form to calculate the discounted price
