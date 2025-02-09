@@ -36,3 +36,8 @@ console.log("The New Prices After a 10% Discount is Applied are:", discount); //
 let inventory = [10, 7, 0, 3, 4, 0]; //Declares the initial Inventory array which contains zeros
 let stock = inventory.filter(inventory => inventory >= 1); //Creates the filter formula which will filter out all of the zeros in the Inventory array to create the new array, "Stock", which removes all zeros from the initial array
 console.log(stock); //Logs the Array "Stock" to the console
+
+//Task 6: Reduce Method
+let sales = [500, 300, 200, 400]; //Declares the Initial Array of Sales
+let totalRevenue = sales.reduce((sum, sale) => sum + sale, 0); //Creates the addition formula which will add all of the Sales in the Array to generate a Total Revenue
+console.log(`Total Sales Revenue is Equal to: $${totalRevenue}`); //Logs the Total Revenue as a Template Literal which allows the Total to be labeled and appear more organized
