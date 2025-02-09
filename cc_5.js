@@ -26,3 +26,8 @@ cartItems.pop(); //Removes Soap (the last item) from the Product List
 cartItems.unshift("Bread"); //Adds bread to the beginning of the Product List
 cartItems.shift(); //Removes bread (the first item) from the Product List
 console.log("Final Product List:", cartItems) //Logs final list to the console
+
+//Task 4: Map Method
+let prices = [100, 200, 300]; //Declares an Array containing the initial prices
+let discount = prices.map(num => num - (num * 0.10)) //Applies the 10% discount to the prices and subtracts the Discount Value from the Original Price to find the Discounted Price
+console.log("The New Prices After a 10% Discount is Applied are:", discount); //States the new Prices found as a result of the .map Operation and creates a descriptive sentence for it which is displayed in the console
