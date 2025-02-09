@@ -41,3 +41,8 @@ console.log(stock); //Logs the Array "Stock" to the console
 let sales = [500, 300, 200, 400]; //Declares the Initial Array of Sales
 let totalRevenue = sales.reduce((sum, sale) => sum + sale, 0); //Creates the addition formula which will add all of the Sales in the Array to generate a Total Revenue
 console.log(`Total Sales Revenue is Equal to: $${totalRevenue}`); //Logs the Total Revenue as a Template Literal which allows the Total to be labeled and appear more organized
+
+//Task 7: find() Method
+let customers = ["Alice", "Bob", "Charlie", "David"];
+const found = customers.find(customer => customer === "Charlie");
+console.log(`The Customer Identified by the Search Parameters is: ${found}`);
