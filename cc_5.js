@@ -43,6 +43,12 @@ let totalRevenue = sales.reduce((sum, sale) => sum + sale, 0); //Creates the add
 console.log(`Total Sales Revenue is Equal to: $${totalRevenue}`); //Logs the Total Revenue as a Template Literal which allows the Total to be labeled and appear more organized
 
 //Task 7: find() Method
-let customers = ["Alice", "Bob", "Charlie", "David"];
-const found = customers.find(customer => customer === "Charlie");
-console.log(`The Customer Identified by the Search Parameters is: ${found}`);
+let customers = ["Alice", "Bob", "Charlie", "David"]; //Establishes the Array which contains the names of the customers
+const found = customers.find(customer => customer === "Charlie"); //Establishes the find() Method and sets the target as Charlie in order to make the code identify Charlie as the customer it is seeking
+console.log(`The Customer Identified by the Search Parameters is: ${found}`); //Logs the Method in the console as well as a descriptive sentence so that the results of the code are clearly logged and displayed in the console
+
+//Task 8: Function Declaration
+function calculateTax(amount) {
+    return amount * 0.20;
+}                                //Establishes the calculateTax function and outlines the math it will complete in order to calculate the tax on a specified amount
+console.log(`The Calculated Tax on an Item costing $2000 is: $${calculateTax(2000)}`) //Logs the function to the console and identifies the amount the Tax is being calculated from so that the Tax is displayed in the console
