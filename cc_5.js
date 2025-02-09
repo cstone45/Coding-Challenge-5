@@ -18,3 +18,11 @@ let order = {
     } //Defines displayOrder function to display results
 };
 console.log(order.displayOrder()) //Calls function and displays results in console
+
+//Task 3: Array Manupulation (push,pop,shift,unshift)
+let cartItems = ["Apples", "Oranges", "Watermelon"]; //Declares Product Array
+cartItems.push("Soap"); //Adds Soap to the end of the Product List
+cartItems.pop(); //Removes Soap (the last item) from the Product List
+cartItems.unshift("Bread"); //Adds bread to the beginning of the Product List
+cartItems.shift(); //Removes bread (the first item) from the Product List
+console.log("Final Product List:", cartItems) //Logs final list to the console
