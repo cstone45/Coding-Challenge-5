@@ -12,7 +12,7 @@ for (let key in customer) {
 let order = {
     orderID: 12345, //Sets OrderID to 12345
     totalAmount: 150, //Sets Total Amount to 150 Units
-    status: "Processing", //Sets Stauts as Processing
+    status: "Processing", //Sets Status as Processing
     displayOrder: function() {
         return `OrderID ${this.orderID} contains ${this.totalAmount} orders and is ${this.status}`;
     } //Defines displayOrder function to display results
@@ -35,7 +35,7 @@ console.log("The New Prices After a 10% Discount is Applied are:", discount); //
 //Task 5: Filter Method
 let inventory = [10, 7, 0, 3, 4, 0]; //Declares the initial Inventory array which contains zeros
 let stock = inventory.filter(inventory => inventory >= 1); //Creates the filter formula which will filter out all of the zeros in the Inventory array to create the new array, "Stock", which removes all zeros from the initial array
-console.log(stock); //Logs the Array "Stock" to the console
+console.log("The Stock of Products Remaining After Filtering is:", stock); //Logs the Array "Stock" to the console
 
 //Task 6: Reduce Method
 let sales = [500, 300, 200, 400]; //Declares the Initial Array of Sales
@@ -58,3 +58,7 @@ function applyDiscount(price, discount) {
     return price - (price * discount);
 }                                             //Creates the Function to apply the discount mathematically and return the discounted price
 console.log(`The Price of a Product after a Discount is: $${applyDiscount(7500, 0.25)}`) //Establishes the oiginal price and discount in a proper numerical form to calculate the discounted price
+
+//Task 10: Arrow Function
+const calculatePoints = (purchaseAmount) => purchaseAmount / 10 //Establishes the Arrow Function and Defines the Equation from Which the Code Will Calculate the Points Recieved
+console.log("The Amount of Points Recieved After this Purchase is:", calculatePoints(4000)); //Calls the Function and Defines the purchaseAmount Value which will be put into the equation to determine the amount of points recieved
