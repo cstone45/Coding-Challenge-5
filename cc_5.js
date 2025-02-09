@@ -31,3 +31,8 @@ console.log("Final Product List:", cartItems) //Logs final list to the console
 let prices = [100, 200, 300]; //Declares an Array containing the initial prices
 let discount = prices.map(num => num - (num * 0.10)) //Applies the 10% discount to the prices and subtracts the Discount Value from the Original Price to find the Discounted Price
 console.log("The New Prices After a 10% Discount is Applied are:", discount); //States the new Prices found as a result of the .map Operation and creates a descriptive sentence for it which is displayed in the console
+
+//Task 5: Filter Method
+let inventory = [10, 7, 0, 3, 4, 0]; //Declares the initial Inventory array which contains zeros
+let stock = inventory.filter(inventory => inventory >= 1); //Creates the filter formula which will filter out all of the zeros in the Inventory array to create the new array, "Stock", which removes all zeros from the initial array
+console.log(stock); //Logs the Array "Stock" to the console
